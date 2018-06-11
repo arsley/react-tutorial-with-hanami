@@ -1,0 +1,3 @@
+project=react_tutorial
+test=minitest
+template=erb
