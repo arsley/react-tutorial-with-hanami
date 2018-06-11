@@ -1,5 +1,5 @@
 require 'hanami/helpers'
-require 'hanami/assets'
+# require 'hanami/assets'
 
 module Tutorial
   class Application < Hanami::Application
@@ -125,40 +125,40 @@ module Tutorial
       ##
       # ASSETS
       #
-      assets do
-        # JavaScript compressor
-        #
-        # Supported engines:
-        #
-        #   * :builtin
-        #   * :uglifier
-        #   * :yui
-        #   * :closure
-        #
-        # See: http://hanamirb.org/guides/assets/compressors
-        #
-        # In order to skip JavaScript compression comment the following line
-        javascript_compressor :builtin
-
-        # Stylesheet compressor
-        #
-        # Supported engines:
-        #
-        #   * :builtin
-        #   * :yui
-        #   * :sass
-        #
-        # See: http://hanamirb.org/guides/assets/compressors
-        #
-        # In order to skip stylesheet compression comment the following line
-        stylesheet_compressor :builtin
-
-        # Specify sources for assets
-        #
-        sources << [
-          'assets'
-        ]
-      end
+      # assets do
+      #   # JavaScript compressor
+      #   #
+      #   # Supported engines:
+      #   #
+      #   #   * :builtin
+      #   #   * :uglifier
+      #   #   * :yui
+      #   #   * :closure
+      #   #
+      #   # See: http://hanamirb.org/guides/assets/compressors
+      #   #
+      #   # In order to skip JavaScript compression comment the following line
+      #   javascript_compressor :builtin
+      #
+      #   # Stylesheet compressor
+      #   #
+      #   # Supported engines:
+      #   #
+      #   #   * :builtin
+      #   #   * :yui
+      #   #   * :sass
+      #   #
+      #   # See: http://hanamirb.org/guides/assets/compressors
+      #   #
+      #   # In order to skip stylesheet compression comment the following line
+      #   stylesheet_compressor :builtin
+      #
+      #   # Specify sources for assets
+      #   #
+      #   sources << [
+      #     'assets'
+      #   ]
+      # end
 
       ##
       # SECURITY
@@ -297,30 +297,30 @@ module Tutorial
       # host   'example.org'
       # port   443
 
-      assets do
-        # Don't compile static assets in production mode (eg. Sass, ES6)
-        #
-        # See: http://www.rubydoc.info/gems/hanami-assets#Configuration
-        compile false
-
-        # Use fingerprint file name for asset paths
-        #
-        # See: http://hanamirb.org/guides/assets/overview
-        fingerprint true
-
-        # Content Delivery Network (CDN)
-        #
-        # See: http://hanamirb.org/guides/assets/content-delivery-network
-        #
-        # scheme 'https'
-        # host   'cdn.example.org'
-        # port   443
-
-        # Subresource Integrity
-        #
-        # See: http://hanamirb.org/guides/assets/content-delivery-network/#subresource-integrity
-        subresource_integrity :sha256
-      end
+      # assets do
+      #   # Don't compile static assets in production mode (eg. Sass, ES6)
+      #   #
+      #   # See: http://www.rubydoc.info/gems/hanami-assets#Configuration
+      #   compile false
+      #
+      #   # Use fingerprint file name for asset paths
+      #   #
+      #   # See: http://hanamirb.org/guides/assets/overview
+      #   fingerprint true
+      #
+      #   # Content Delivery Network (CDN)
+      #   #
+      #   # See: http://hanamirb.org/guides/assets/content-delivery-network
+      #   #
+      #   # scheme 'https'
+      #   # host   'cdn.example.org'
+      #   # port   443
+      #
+      #   # Subresource Integrity
+      #   #
+      #   # See: http://hanamirb.org/guides/assets/content-delivery-network/#subresource-integrity
+      #   subresource_integrity :sha256
+      # end
     end
   end
 end
